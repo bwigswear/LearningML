@@ -54,7 +54,10 @@ def main():
     idx = np.argsort(np.random.random(nsets*nsamp))
     newx = newx[idx]
     newy = newy[idx]
-    np.save("iris_train_features_augmented.py", newx)
-    np.save("iris_train_labels_augmented.py", newy)
-    np.save("iris_test_features_augmented.py", x_test)
-    np.save("iris_test_labels_augmented.py", y_test)
+    np.save("iris_train_features_augmented.npy", newx)
+    np.save("iris_train_labels_augmented.npy", newy)
+    np.save("iris_test_features_augmented.npy", x_test)
+    np.save("iris_test_labels_augmented.npy", y_test)
+
+if __name__ == "__main__":
+    main()

@@ -2,7 +2,7 @@
 import numpy as np
 from sklearn.datasets import make_classification
 
-a,b = make_classification(n_samples = 100, weights=(0.9, 0.1))
+a,b = make_classification(n_samples = 10000, weights=(0.9, 0.1))
 idx = np.where(b == 0)[0]
 x0 = a[idx,:]
 y0 = b[idx]
